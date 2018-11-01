@@ -6,7 +6,7 @@ def insert():
 		
 		for j in range(0,i+1):
 			print(values[i],end=" ")
-			
+			i=i+1
 			#values[i]=values[i+1]
 		print("\n")
 	#count=len(array)
