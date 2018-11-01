@@ -14,7 +14,7 @@ def find():
 	count=0
 	for i in range(0,len):
 		for j in range(i+1,len):
-			if(array[i]==array[j]):
+			while array[i]==array[j]:
 				count=count+1
 	print (array)
 	print(count,"sets are present in this array")
