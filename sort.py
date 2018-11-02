@@ -8,12 +8,16 @@ for i in range(0,leng):
 	array.append(val)
 #print(len(array))
 def check():
+	element=0
 	count=0
 	for j in range(0,len(array)):
-		head=array[j]
+		tempelement=array[j]
+		tempcount=0
 		for k in range(0,len(array)):
-			if(head==array[k]):
-				count=count+1				
-				dict={'val':head,'rep':count}
-	print(dict.values())
+			if(tempelement==array[k]):
+				tempcount=tempcount+1				
+		if(tempcount>>count):
+			element=tempelement
+			count=tempcount
+	print("most frequent element is",element)
 check()
