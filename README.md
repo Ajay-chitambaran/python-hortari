@@ -1,6 +1,8 @@
 # python-hortari
 python_workshop31/10/2018
-psychometric test @ newpsycho.py
+psychometric test-Ajay @ newpsycho.py
+
+
 Psychometric testing is designed to find job-relevant information about
 an applicant that the traditional interview process would not uncover. It
 typically includes a combination of online aptitude and personality tests
