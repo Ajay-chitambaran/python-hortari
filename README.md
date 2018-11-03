@@ -1,8 +1,9 @@
 # python-hortari
 python_workshop31/10/2018
 psychometric test-Ajay @ newpsycho.py
+Q-1012 -Holes in a Number @hole.py
 
-
+----------------------psychometry--------------------------------------
 Psychometric testing is designed to find job-relevant information about
 an applicant that the traditional interview process would not uncover. It
 typically includes a combination of online aptitude and personality tests
@@ -46,8 +47,32 @@ integer that describes upperLimits[i].
 *Sample Output*
 
 ```3```
+----------------------------------------------------------------------------------
 
+*Q-1012 -> Holes in a Number* @hole.py
 
+You are designing a poster which prints out numbers with a unique style
+applied to each of them. The styling is based on the number of closed
+paths or holes present in a given number.
+
+The number of holes that each of the digits from 0 to 9 have are equal to
+the number of closed paths in the digit. Their values are:
+1, 2, 3, 5, and 7 = 0 holes.
+0, 4, 6, and 9 = 1 hole.
+8 = 2 holes.
+
+Given a number, you must determine the sum of the number of holes for
+all of its digits. For example, the number 819 has 3 holes.
+
+*Input Format*
+There is one line of text containing a single integer num, the value to
+process.
+
+*Sample Input*
+```630```
+
+*Sample Output*
+```2```
 
 
 
