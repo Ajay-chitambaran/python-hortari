@@ -3,9 +3,10 @@ origItems=[]
 origPrice=[]
 items=[]
 price=[]
-itindex=[]
-#prindex=[]
-itemaddress=[]#address holder
+itindex=[]#address holder
+valuestorage=[]
+holder=[]
+holder2=[]
 count=0
 n=int(input())
 for i in range(0,n):
@@ -17,17 +18,15 @@ for k in range(0,m):
     #prindex.append(k)#index value to an array
 search=int(input())
 for item in range(0,search):
-    itemcompar=input()
-    for j in range(0,len(origItems)):
-        if(itemcompar==origItems[j]):
-           itemaddress.append(j)#locating address of item phase1
+	itemcompar=input()
+	for j in range(0,len(itindex)):
+		if(itemcompar==origItems[itindex[j]]):
+			 holder.append(origPrice[itindex[j]])#moved to holder
 search2=int(input())
 if(search==search2):
-    for rep in range(0,search2):
-        nowval=float(input())
-        for x in range(0,len(itemaddress)):
-            a=itemaddress[x]#locatingof address of item phase2
-            if(origPrice[a]!=nowval):#compared values and counted with counter
-                count=count+1
-print(count-2)#mathematical correction
-#print(count)
+	for rep in range(0,search2):
+		nowval=float(input())
+		holder2.append(nowval)
+		if(holder[rep]!=holder2[rep]):
+			count=count+1
+print(count)#result
