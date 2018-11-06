@@ -1,3 +1,4 @@
+#insert float values at prices
 origItems=[]
 origPrice=[]
 items=[]

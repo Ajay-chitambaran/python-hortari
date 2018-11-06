@@ -2,6 +2,7 @@
 python_workshop31/10/2018
 psychometric test-Ajay @ newpsycho.py
 Q-1012 -Holes in a Number @hole.py
+Q1013-modifyprice @alex.py
 
 ----------------------psychometry--------------------------------------
 Psychometric testing is designed to find job-relevant information about
@@ -73,8 +74,55 @@ process.
 
 *Sample Output*
 ```2```
+----------------------------------------------------------------------------
+1013-modifyprice @alex.py
 
+Michael is a shop owner who keeps a list of the name and sale price for each item in the store's inventory. At each sale, his employees record the name and sale price of each item sold. Michael suspects his manager, Alex, of embezzling money by modifying the sale price of some of the items. Write a program that finds the number of times Alex recorded an incorrect sale price.
 
+*Function Description*
 
+Write the function 'verifyItems'. The function must return an integer denoting the number of sale prices incorrectly recorded by Alex.
 
+*verifyItems has the following parameter(s):*
+origItems[origItems[0],...origItems[n-1]]: an array of n strings, where
+each origItems[i] is the name of an item in inventory
+origPrices[origPrices[0],...origPrices[n-1]]: an array of n floating point
+numbers, where each origPrices[i] is the price of origItems[i]
+items[items[0],...items[m-1]]: an array of m strings containing the
+name of each item[j] sold by Alex
+prices[prices[0],...prices[m-1]]: An array of floating-point numbers,
+where each prices[j] contains the sale price recorded by Alex for items[j].
 
+*Input Format*
+The first line contains an integer n, denoting the size of the origItems
+array.
+The next n lines each contain an element origItems[i].
+The next line contains an integer n, denoting the size of the origPrices
+array.
+The next n lines each contain an element origPrices[i].
+The next line contains an integer m, denoting the size of the items
+array.
+The next m lines each contain an element items[j].
+The next line contains an integer, m, the size of the prices array.
+The next m lines each contain an element prices[j].
+
+*Sample Input*
+```4
+rice
+sugar
+wheat
+cheese
+4
+16.89
+56.92
+20.89
+345.99
+2
+rice
+cheese
+2
+18.99
+400.89
+*Sample Output*
+ 2 
+ ---------------------------------------------
