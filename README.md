@@ -3,7 +3,7 @@ python_workshop31/10/2018
 psychometric test-Ajay @ newpsycho.py
 Q-1012 -Holes in a Number @hole.py
 Q1013-modifyprice @alex.py
-
+Q1014-@pangrams.py
 ----------------------psychometry--------------------------------------
 Psychometric testing is designed to find job-relevant information about
 an applicant that the traditional interview process would not uncover. It
@@ -125,4 +125,41 @@ cheese
 400.89
 *Sample Output*
  2 
- ---------------------------------------------
+ -------------------------------------------------------
+Q1014-pangrams
+A pangram is a word or sentence that contains every letter of the alphabet. For example: the quick brown fox jumps over the lazy dog. Nicole wants to improve her typing speed for programming contests, and she thinks that practicing typing pangrams is the best way to do it.
+Given a list of strings made of lowercase letters in the range ascii[a-z], determine whether or not they are pangrams.
+
+*Function Description*
+Complete the function isPangram in the editor below. The function must return a string where each position represents the results of your test. Use a '1' to represent true, '0' for false.
+
+is Pangram has the following parameter(s)
+: strings[strings[0],...strings[n-1]]: an array of strings to test
+
+*Input Format*
+Input from stdin will be processed as follows and passed to the function.
+The first line contains an integer n, the size of the array strings.
+The next n lines each contain an element strings[i] where 0 ≤ i < n.
+
+*Sample Input*
+```4
+we promptly judged antique ivory buckles for the
+next prize
+we promptly judged antique ivory buckles for the
+prizes
+the quick brown fox jumps over the lazy dog
+the quick brown fox jump over the lazy dog```
+
+*Sample Output*
+```1010```
+
+*Explanation*
+```strings[0] = we promptly judged antique ivory
+buckles for the next prize = True
+strings[1] = we promptly judged antique ivory
+buckles for the prizes = False
+strings[2] = the quick brown fox jumps over the
+lazy dog = True
+strings[3] = the quick brown fox jump over the
+lazy dog = False```
+Only strings[0] and strings[2] are pangrams.
